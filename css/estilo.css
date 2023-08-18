@@ -126,7 +126,7 @@ main{
 .caja{
     margin:20px;
     border: 2px solid #b9c23aef;
-    width: 30%;
+    width: 50%;
     height: 600px;
     background-color: #b9c23aef;
     display: inline-block;
@@ -141,6 +141,11 @@ main{
     border: none;
     background-color: #a3671cc5;
 }
+@media screen and (max-width: 480px){
+    .caja{background-color: bisque;}
+}
+
+    
 
 /** CONTACTOS **/
 

@@ -17,7 +17,6 @@
     padding-block: 10px;
     letter-spacing: 1px;
 }
-
 .navegacion_item{
     margin-right: 5px;
     color: rgb(255, 255, 255);
@@ -26,8 +25,7 @@
 .navegacion_item_active,.navegacion_item:hover {
     margin-right: 5px;
     text-decoration: underline double white;
-    color: rgb(255, 255, 255);
-}
+    color: rgb(255, 255, 255);}
 .logo{
     width: 100px;
 }
@@ -41,11 +39,9 @@
     border: solid;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-
-}
+    align-items: center;}
 .contenido {
+    padding: 1rem;
     width: 100%;
     border: solid;
     display: grid; 
@@ -56,25 +52,71 @@
       "imagen-1 imagen-2 imagen-3"
       "imagen-4 imagen-5 imagen-6"
       "imagen-7 imagen-8 imagen-9"; 
-    grid-area: camperas; 
-}
+    grid-area: camperas; }
   .imagen-1 { 
     grid-area: imagen-1; 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-}
-.img1{
-    width: 200px;
-}
-  .imagen-2 { grid-area: imagen-2; }
-  .imagen-3 { grid-area: imagen-3; }
-  .imagen-4 { grid-area: imagen-4; }
-  .imagen-5 { grid-area: imagen-5; }
-  .imagen-6 { grid-area: imagen-6; }
-  .imagen-7 { grid-area: imagen-7; }
-  .imagen-8 { grid-area: imagen-8; }
-  .imagen-9 { grid-area: imagen-9; }
+    background-position: center center;}
+        .img1{
+        width: 200px;}
+    .imagen-2 { 
+    grid-area: imagen-2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;}
+        .img2{
+        width: 200px;}
+    .imagen-3 { 
+    grid-area: imagen-3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;}
+        .img3{
+        width: 200px;}
+    .imagen-4 { 
+    grid-area: imagen-4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+     .img4{
+     width: 200px;}
+    .imagen-5 { 
+    grid-area: imagen-5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;}
+     .img5{
+     width: 200px;}
+    .imagen-6 { 
+    grid-area: imagen-6;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+     .img6{
+      width: 250px;
+      height: 223px;}
+    .imagen-7 { 
+    grid-area: imagen-7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+      .img7{
+      width: 200px;}
+    .imagen-8 { 
+    grid-area: imagen-8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+      .img8{
+      width: 260px;}
+.imagen-9 { 
+    grid-area: imagen-9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+      .img9{
+      width: 200px;}
 
   /** QUIENES SOMOS **/
 

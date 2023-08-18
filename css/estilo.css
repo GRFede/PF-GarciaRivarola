@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
-*{
-    margin: 0;
+
+/** RESET **/
+
+*{  margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Unna', serif;}
 
+/** HEADER **/
+
+.navbar{
+    padding: 0;
+}
  .navegacion{
     background-color: #a3671cc5;
     padding-block: 10px;
@@ -21,16 +28,58 @@
     text-decoration: underline double white;
     color: rgb(255, 255, 255);
 }
-
+.logo{
+    width: 100px;
+}
 .seccion_img{
     width: 100%;
     height: 100vh;
 }
 
+/** PRODUCTO **/
+.camperas{
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.contenido {
+    width: 100%;
+    border: solid;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "imagen-1 imagen-2 imagen-3"
+      "imagen-4 imagen-5 imagen-6"
+      "imagen-7 imagen-8 imagen-9"; 
+    grid-area: camperas; 
+}
+  .imagen-1 { 
+    grid-area: imagen-1; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.img1{
+    width: 200px;
+}
+  .imagen-2 { grid-area: imagen-2; }
+  .imagen-3 { grid-area: imagen-3; }
+  .imagen-4 { grid-area: imagen-4; }
+  .imagen-5 { grid-area: imagen-5; }
+  .imagen-6 { grid-area: imagen-6; }
+  .imagen-7 { grid-area: imagen-7; }
+  .imagen-8 { grid-area: imagen-8; }
+  .imagen-9 { grid-area: imagen-9; }
+
+  /** QUIENES SOMOS **/
 
 main{ 
     background-color: beige;
-    height: 100vh;
 }
 .caja{
     margin:20px;
@@ -51,31 +100,83 @@ main{
     background-color: #a3671cc5;
 }
 
+/** CONTACTOS **/
 
+.seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccion__top{
+    width: 800px;
+    display: flex;
+    display: inline-block;
+    justify-content: center;
 
+}
 
-.pie{
+.seccion_button{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.imagen1{
+    background-image: url(../imagen/contactos.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/** FOOTER **/
+
+.footer{
     background-color: #a3671cc5;
     letter-spacing: 1px;
-    bottom: 0;
+    gap: 50px;
     width: 100%;
     color: rgb(255, 255, 255);
-    letter-spacing: 1px;
-    padding-top: 10px;
-    display: inline;
+    padding: .5rem;
+    
     display: flex;
- 
-    flex-direction: row;
     flex-wrap: wrap;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
+    justify-content: space-around;
 }
 .pie_imagen{
-    border-radius: 40px;
-    border: 6px solid #a3671cc5;
+    border: 4px solid #a3671cc5;
     width: 40px;
     height: 40px;
     
 }
+.footer__izquierda{
+    flex: 1;
+    padding-left: 0;
+}
+.footer__izquierda__lista{
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer__medio{
+    flex: 1;   
+}
+.footer__derecha{
+    flex: 1;
+}
+.footer__derecha__img{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer__botton{
+    flex: 1;
+}
+.tamaño{
+    width: 200px;
+}
+
+
+
+
+

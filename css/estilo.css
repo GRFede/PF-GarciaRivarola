@@ -10,8 +10,7 @@
 /** HEADER **/
 
 .navbar{
-    padding: 0;
-    position: sticky;}
+    padding: 0;}
 
  .navegacion{
     background-color: #97a5a8c5;
@@ -122,8 +121,8 @@
         align-items: center;
         justify-content: center;}
     .img{
-        width: 300px;
-        height: 300px;}
+        width: 100%;
+        }
     .contenido p {
         margin-top: 3px;
         margin-bottom: 0px;}
@@ -174,48 +173,42 @@
     margin: 0;
     font-weight: 700;}
 
-.talles_tabla{
-
-}
-
   /** QUIENES SOMOS **/
     
 .caja{
-    margin:20px;
-    border: 2px solid #b9c23aef;
-    width: 50%;
-    height: 600px;
-    background-color: #b9c23aef;
-    display: inline-block;
-    overflow: auto;}
-
-.caja_imagen{
+    display: flex;
+    flex-direction: column;
+    margin:10px;
     width: 100%;
-    height: 50%;}
+    background-color: #efefefef;
+}
+.caja_img{
+    display: flex;
+    justify-content: center;
+}
+.caja_imagen{    
+    width: 80%;
+}
 
 .caja_boton{
     margin-left: 50%;
     border: none;
-    background-color: #a3671cc5;}
-
-@media screen and (max-width: 480px){
-    .caja{background-color: bisque;}}    
+}
 
 /** CONTACTOS **/
 
 .seccion{
+    background-color: rgb(233, 233, 233);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .seccion__top{
-    width: 800px;
+    width: 100%;
     display: flex;
     display: inline-block;
     justify-content: center;
-
 }
-
 .seccion_button{
     padding: 1rem;
     width: 100%;
@@ -223,12 +216,6 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
-.imagen1{
-    background-image: url(../imagen/contactos.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 /** FOOTER **/

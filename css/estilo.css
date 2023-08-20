@@ -14,7 +14,7 @@
     position: sticky;}
 
  .navegacion{
-    background-color: #a3671cc5;
+    background-color: #97a5a8c5;
     padding-block: 10px;
     letter-spacing: 1px;}
 
@@ -36,14 +36,15 @@
 
 /** PRODUCTO **/
 .camperas{
+
     border: solid;
     display: flex;
     flex-direction: column;
     align-items: center;}
+    
 .camperas_campera h1{
     margin: 0;
-    font-weight: 700;
-    text-decoration: underline;}
+    font-weight: 700;}
 
 .contenido {
     padding: 1rem;
@@ -126,7 +127,7 @@
     .contenido p {
         margin-top: 3px;
         margin-bottom: 0px;}
-        
+
     .precio{
         margin: 3px;
         display: flex;
@@ -161,11 +162,24 @@
             width: 380px;
             height: 500px;}}
     
-  /** QUIENES SOMOS **/
+  /** TABLA DE TALLES **/
 
-main{ 
-    background-color: beige;
+.talles{
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.talles h1{
+    margin: 0;
+    font-weight: 700;}
+
+.talles_tabla{
+
 }
+
+  /** QUIENES SOMOS **/
+    
 .caja{
     margin:20px;
     border: 2px solid #b9c23aef;
@@ -173,22 +187,19 @@ main{
     height: 600px;
     background-color: #b9c23aef;
     display: inline-block;
-    overflow: auto;
-}
+    overflow: auto;}
+
 .caja_imagen{
     width: 100%;
-    height: 50%;
-}
+    height: 50%;}
+
 .caja_boton{
     margin-left: 50%;
     border: none;
-    background-color: #a3671cc5;
-}
-@media screen and (max-width: 480px){
-    .caja{background-color: bisque;}
-}
+    background-color: #a3671cc5;}
 
-    
+@media screen and (max-width: 480px){
+    .caja{background-color: bisque;}}    
 
 /** CONTACTOS **/
 
@@ -223,7 +234,7 @@ main{
 /** FOOTER **/
 
 .footer{
-    background-color: #a3671cc5;
+    background-color: #97a5a8c5;
     letter-spacing: 1px;
     gap: 50px;
     width: 100%;
@@ -235,13 +246,18 @@ main{
     justify-content: space-around;
 }
 .pie_imagen{
-    border: 4px solid #a3671cc5;
+    border: 4px solid #97a5a8c5;
+    width: 55px;
+    height: 45px;
+}
+.pie_imagen1{
+    border: 4px solid #97a5a8c5;
     width: 40px;
     height: 40px;
-    
 }
 .footer__izquierda{
     flex: 1;
+    width: 200px;
     padding-left: 0;
 }
 .footer__izquierda__lista{
@@ -249,10 +265,12 @@ main{
     padding-left: 0;
 }
 .footer__medio{
+    width: 150px;
     flex: 1;   
 }
 .footer__derecha{
     flex: 1;
+    width: 170px;
 }
 .footer__derecha__img{
     display: flex;
@@ -260,11 +278,17 @@ main{
     padding-left: 0;
 }
 .footer__botton{
-    flex: 1;
+    display: flex;
+    flex: 1;}
+
+.footer__botton p{
+    display: flex;
+    align-items: flex-end;
 }
-.tamaño{
-    width: 200px;
+.footer__botton div{
+    display: flex;
 }
+
 
 
 

@@ -1,0 +1,21 @@
+.seccion{
+    background-color: $secundaryColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .seccion_top{
+        width: 100%;
+        display: flex;
+        display: inline-block;
+        justify-content: center;
+    }
+    .seccion_button{
+        padding: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}

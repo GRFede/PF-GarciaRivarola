@@ -1,0 +1,16 @@
+.caja{
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    width: 100%;
+    background-color: $secundaryColor;
+    
+    .caja_img{
+        display: flex;
+        justify-content: center;
+    }
+    .caja_imagen{    
+        width: 80%;
+    }
+}
+

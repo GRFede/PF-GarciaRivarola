@@ -1,0 +1,40 @@
+    .navbar{
+        padding: 0;
+
+        .navegacion{
+            background-color: $mainColor;
+            padding-block: 10px;
+            letter-spacing: 1px;
+            
+            .logo{
+                width: 100px;
+                }
+            .collapse{
+                .navbar-nav{
+                    .navegacion_item{
+                    margin-right: 5px;
+                    color: $secundaryColor;
+                    text-decoration: none;
+                    
+                        &:hover{
+                        margin-right: 5px;
+                        text-decoration: underline double white;
+                        color: $secundaryColor;
+                        }
+                    }
+                
+                    .navegacion_item_active{
+                    margin-right: 5px;
+                    text-decoration: underline double white;
+                    color: $secundaryColor;
+
+                        &:hover{
+                        margin-right: 5px;
+                        text-decoration: underline double white;
+                        color: $secundaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }

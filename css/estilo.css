@@ -6,6 +6,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Unna', serif;}
+*::selection{
+    background-color: #97a5a8c5;
+    color: white;
+}
 
 /** HEADER **/
 
@@ -19,16 +23,22 @@
 
 .navegacion_item{
     margin-right: 5px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-decoration: none;}
 
-.navegacion_item_active,.navegacion_item:hover {
+.navegacion_item_active{
     margin-right: 5px;
     text-decoration: underline double white;
-    color: rgb(255, 255, 255);}
+    color: #ffffff;}
+
+.navegacion_item:hover{
+    margin-right: 5px;
+    text-decoration: underline double white;
+    color: #ffffff;}
 
 .logo{
     width: 100px;}
+
 .seccion_img{
     width: 100%;
     height: 100vh;}
@@ -49,77 +59,22 @@
     padding: 1rem;
     width: 100%;
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    grid-template-areas: 
-      "imagen-1 imagen-2 imagen-3"
-      "imagen-4 imagen-5 imagen-6"
-      "imagen-7 imagen-8 imagen-9";}
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            150px,
+            1fr
+            )
+        ) 
+    }
 
-    .imagen-1{
+    .imagen{
     padding: 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:center;}
-    
-    .imagen-2 {
-        padding: 2px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;}
 
-    .imagen-3 {
-        padding: 2px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;}
-
-    
-    .imagen-4 {
-        padding: 2px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;}
-
-
-    .imagen-5 {
-        padding: 2px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;}
-
-    .imagen-6 {
-        padding: 2px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;}
-
-    .imagen-7 {
-        padding: 2px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;}
-
-    .imagen-8 {
-        padding: 2px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;}
-
-    .imagen-9 {
-        padding: 2px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;}
     .img{
         width: 100%;
         }
@@ -132,34 +87,6 @@
         display: flex;
         justify-content: center    }
     
-    @media screen and (max-width: 950px){
-        .contenido{
-            padding: 1rem;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr; 
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-            gap: 0px 0px; 
-            grid-template-areas: 
-            "imagen-1 imagen-2"
-            "imagen-3 imagen-4"
-            "imagen-5 imagen-6"
-            "imagen-7 imagen-8"
-            "imagen-9 ."; 
-            justify-items: center;}
-            .img{
-                width: 300px;
-                height: 300px;}}
-        @media screen and (max-width: 650px){
-        .contenido{
-            padding: 1rem;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-items: center;}
-        .img{
-            width: 380px;
-            height: 500px;}}
     
   /** TABLA DE TALLES **/
 
@@ -190,10 +117,6 @@
     width: 80%;
 }
 
-.caja_boton{
-    margin-left: 50%;
-    border: none;
-}
 
 /** CONTACTOS **/
 
@@ -203,7 +126,7 @@
     flex-direction: column;
     align-items: center;
 }
-.seccion__top{
+.seccion_top{
     width: 100%;
     display: flex;
     display: inline-block;
@@ -216,6 +139,10 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+.caja_boton{
+    margin-left: 50%;
+    border: none;
 }
 
 /** FOOTER **/

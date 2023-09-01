@@ -1,5 +1,6 @@
 .seccion{
-    background-color: $secundaryColor;
+    background: rgb(116,134,138);
+    background: radial-gradient(circle, rgba(116,134,138,0) 10%, rgba(116,134,138,0.1292892156862745) 39%, rgba(137,151,154,0.6474964985994398) 90%);
     display: flex;
     flex-direction: column;
     align-items: center;

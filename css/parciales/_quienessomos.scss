@@ -1,16 +1,16 @@
 .caja{
     display: flex;
     flex-direction: column;
-    margin:10px;
     width: 100%;
-    background-color: $secundaryColor;
+    background: rgb(116,134,138);
+    background: radial-gradient(circle, rgba(116,134,138,0) 53%, rgba(116,134,138,0.1292892156862745) 66%, rgba(137,151,154,0.6474964985994398) 90%);
     
     .caja_img{
         display: flex;
         justify-content: center;
-    }
-    .caja_imagen{    
-        width: 80%;
+        width: 100%;  
+        .caja_imagen{    
+                width: 25%;
+        }
     }
 }
-

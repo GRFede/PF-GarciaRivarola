@@ -69,7 +69,7 @@
   padding: 1rem;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .imagen {
@@ -81,34 +81,78 @@
 }
 .imagen .img {
   width: 100%;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.imagen p {
+.imagen .num1 {
+  animation-delay: 20s;
+}
+.imagen .num1 {
+  animation-delay: 1s;
+}
+.imagen .num2 {
+  animation-delay: 2s;
+}
+.imagen .num3 {
+  animation-delay: 3s;
+}
+.imagen .num4 {
+  animation-delay: 4s;
+}
+.imagen .num5 {
+  animation-delay: 5s;
+}
+.imagen .num6 {
+  animation-delay: 6s;
+}
+.imagen .num7 {
+  animation-delay: 7s;
+}
+.imagen .num8 {
+  animation-delay: 8s;
+}
+.imagen .num9 {
+  animation-delay: 9s;
+}
+
+p {
   margin-top: 3px;
   margin-bottom: 0px;
 }
-.imagen .precio {
+
+.precio {
   margin: 3px;
   display: flex;
   justify-content: center;
 }
-
+@keyframes slide-in-fwd-center {
+  0% {
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
 .caja {
   display: flex;
   flex-direction: column;
-  margin: 10px;
   width: 100%;
-  background-color: #ffffff;
+  background: rgb(116, 134, 138);
+  background: radial-gradient(circle, rgba(116, 134, 138, 0) 53%, rgba(116, 134, 138, 0.1292892157) 66%, rgba(137, 151, 154, 0.6474964986) 90%);
 }
 .caja .caja_img {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
-.caja .caja_imagen {
-  width: 80%;
+.caja .caja_img .caja_imagen {
+  width: 25%;
 }
 
 .seccion {
-  background-color: #ffffff;
+  background: rgb(116, 134, 138);
+  background: radial-gradient(circle, rgba(116, 134, 138, 0) 10%, rgba(116, 134, 138, 0.1292892157) 39%, rgba(137, 151, 154, 0.6474964986) 90%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,6 +178,10 @@
   flex-direction: column;
   align-items: center;
 }
+.talles .img {
+  width: 100%;
+  height: 100vh;
+}
 .talles h1 {
   margin: 0;
   font-weight: 700;
@@ -148,11 +196,11 @@
   padding: 0.5rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .footer .footer__izquierda {
   flex: 1;
-  width: 200px;
   padding-left: 0;
 }
 .footer .footer__izquierda .footer__izquierda__lista {
@@ -165,7 +213,6 @@
   text-decoration: none;
 }
 .footer .footer__medio1 {
-  width: 150px;
   flex: 1;
 }
 .footer .footer__medio2 {

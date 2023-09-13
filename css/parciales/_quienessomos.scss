@@ -2,15 +2,15 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: rgb(116,134,138);
     background: radial-gradient(circle, rgba(116,134,138,0) 53%, rgba(116,134,138,0.1292892156862745) 66%, rgba(137,151,154,0.6474964985994398) 90%);
     
     .caja_img{
         display: flex;
         justify-content: center;
         width: 100%;  
-        .caja_imagen{    
-                width: 25%;
+        .caja_imagen{  
+            padding-top: 1rem;  
+            width: 50%;
         }
     }
 }

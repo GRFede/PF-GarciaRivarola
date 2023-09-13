@@ -51,7 +51,6 @@
 
 .inicio_img {
   width: 100%;
-  height: 100vh;
 }
 
 .camperas {
@@ -138,7 +137,6 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: rgb(116, 134, 138);
   background: radial-gradient(circle, rgba(116, 134, 138, 0) 53%, rgba(116, 134, 138, 0.1292892157) 66%, rgba(137, 151, 154, 0.6474964986) 90%);
 }
 .caja .caja_img {
@@ -147,11 +145,11 @@ p {
   width: 100%;
 }
 .caja .caja_img .caja_imagen {
-  width: 25%;
+  padding-top: 1rem;
+  width: 50%;
 }
 
 .seccion {
-  background: rgb(116, 134, 138);
   background: radial-gradient(circle, rgba(116, 134, 138, 0) 10%, rgba(116, 134, 138, 0.1292892157) 39%, rgba(137, 151, 154, 0.6474964986) 90%);
   display: flex;
   flex-direction: column;
@@ -159,6 +157,7 @@ p {
 }
 .seccion .seccion_top {
   width: 100%;
+  padding: 1rem;
   display: flex;
   display: inline-block;
   justify-content: center;
@@ -171,6 +170,13 @@ p {
   flex-direction: column;
   align-items: center;
 }
+.seccion .seccion_button .formulario .estilo {
+  display: flex;
+  flex-direction: column;
+}
+.seccion .seccion_button .formulario .style {
+  margin-top: 1rem;
+}
 
 .talles {
   border: solid;
@@ -180,7 +186,6 @@ p {
 }
 .talles .img {
   width: 100%;
-  height: 100vh;
 }
 .talles h1 {
   margin: 0;
@@ -215,21 +220,14 @@ p {
 .footer .footer__medio1 {
   flex: 1;
 }
-.footer .footer__medio2 {
-  display: flex;
-  flex-direction: column;
-}
-.footer .footer__medio2 .pie_imagen1 {
+.footer .footer__medio1 .footer__medio__iconos .pie_imagen1 {
   border: 4px solid rgba(151, 165, 168, 0.7725490196);
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
-.footer .footer__medio2 .pie_imagen {
-  border: 4px solid rgba(151, 165, 168, 0.7725490196);
-  width: 55px;
-  height: 45px;
-}
-.footer .footer__botton {
+
+.footer__botton {
   display: flex;
   align-items: end;
 }/*# sourceMappingURL=style.css.map */

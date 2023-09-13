@@ -1,5 +1,4 @@
 .seccion{
-    background: rgb(116,134,138);
     background: radial-gradient(circle, rgba(116,134,138,0) 10%, rgba(116,134,138,0.1292892156862745) 39%, rgba(137,151,154,0.6474964985994398) 90%);
     display: flex;
     flex-direction: column;
@@ -7,6 +6,7 @@
 
     .seccion_top{
         width: 100%;
+        padding: 1rem;
         display: flex;
         display: inline-block;
         justify-content: center;
@@ -18,5 +18,17 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+
+        .formulario{
+
+            .estilo{
+                display: flex;
+                flex-direction: column;
+            }
+            .style{
+                margin-top: 1rem;
+            }
+            }   
+
+        }
     }
-}
